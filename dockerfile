@@ -11,7 +11,7 @@ COPY . .
 RUN go mod download
 
 # 5. Компилируем Go-приложение
-RUN go build -o user-service ./cmd/raptor-user-service
+RUN go build -o raptor-user-service ./cmd/raptor-user-service
 
 # 6. Используем минимальный образ для финального контейнера
 FROM alpine:latest
