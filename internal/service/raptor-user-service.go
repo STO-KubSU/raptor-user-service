@@ -17,9 +17,7 @@ type UserService struct {
 }
 
 func NewUserService() *UserService {
-	users := make(map[int32]*pb.User)
-	users[0] = &pb.User{Id: i32Ptr(0)}
-	return &UserService{dbUsers: users}
+	return &UserService{dbUsers: make(map[int32]*pb.User)}
 }
 
 func (s *UserService) GetUser(ctx context.Context, req *pb.GetUserRequest) (*pb.GetUserResponse, error) {
@@ -32,7 +30,6 @@ func (s *UserService) GetUser(ctx context.Context, req *pb.GetUserRequest) (*pb.
 
 func (s *UserService) CreateUser(ctx context.Context, req *pb.CreateUserRequest) (*pb.CreateUserResponse, error) {
 	userId := int32(len(s.dbUsers))
-	*s.dbUsers[userId].Id = userId
 	user := &pb.User{Id: i32Ptr(userId), Name: req.User.Name, Email: req.User.Email}
 	s.dbUsers[userId] = user
 	return &pb.CreateUserResponse{Id: *user.Id}, nil
