@@ -1,5 +1,5 @@
-github.com/STO-KubSU/raptor-proto v0.2.4 h1:gw8LtMb7kZ7OjiKu0Rbb7YZZqdf58/RD+ZwHUX7t4TQ=
-github.com/STO-KubSU/raptor-proto v0.2.4/go.mod h1:kVtywg+4wvOy1mn9I95C4C/UUnGMBlscdZg369GeqO0=
+github.com/STO-KubSU/raptor-proto v0.2.5 h1:hwnTsPi7h0z5Ctczt7M/5zDchJ1Ey0qCXAJziKEFG4c=
+github.com/STO-KubSU/raptor-proto v0.2.5/go.mod h1:kVtywg+4wvOy1mn9I95C4C/UUnGMBlscdZg369GeqO0=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 golang.org/x/net v0.28.0 h1:a9JDOJc5GMUJ0+UDqmLT86WiEy7iWyIhz8gz8E4e5hE=

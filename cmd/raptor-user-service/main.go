@@ -16,7 +16,7 @@ func main() {
 	}
 
 	grpcServer := grpc.NewServer()
-	pb.RegisterUserServiceServer(grpcServer, &service.UserService{})
+	pb.RegisterUserServiceServer(grpcServer, service.NewUserService())
 
 	log.Println("User service is running on port 50051...")
 	if err := grpcServer.Serve(lis); err != nil {

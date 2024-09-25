@@ -3,7 +3,7 @@ module github.com/STO-KubSU/raptor-user-service
 go 1.23.0
 
 require (
-	github.com/STO-KubSU/raptor-proto v0.2.4
+	github.com/STO-KubSU/raptor-proto v0.2.5
 	google.golang.org/grpc v1.67.0
 )
 
